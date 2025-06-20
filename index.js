@@ -86,6 +86,10 @@ function getItemsByCategory(items, category) {
  */
 function countItems(items) {
   // TODO: use `reduce`
+  return items.reduce(
+    (totalQuantity, item) => totalQuantity + item.quantity,
+    0
+  );
 }
 
 /**
