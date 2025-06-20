@@ -50,6 +50,9 @@ function getUppercaseNames(items) {
  */
 function getItemById(items, id) {
   // TODO: use `find`
+  return items.find(function (item) {
+    return item.id === id;
+  });
 }
 
 /**
