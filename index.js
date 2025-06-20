@@ -38,6 +38,9 @@ function logNames(items) {
  */
 function getUppercaseNames(items) {
   // TODO: use `map`
+  return items.map(function (item) {
+    return item.name.toUpperCase();
+  });
 }
 
 /**
